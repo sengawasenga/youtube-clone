@@ -35,7 +35,7 @@ For the tech stack of this project, we'll go wiht:
 
 * React.js: for the UI build
 * RapidAPI: for API calls
-* Material UI
+* Material UI: for the UI kit
 * Emotion
 
 Hope you'll like it... 😍
