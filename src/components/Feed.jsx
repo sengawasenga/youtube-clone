@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Stack, Box, Typography } from "@mui/material";
-import Sidebar from "./Sidebar";
+import { Sidebar, Videos } from "./";
 
 const Feed = () => {
   return (
@@ -22,6 +22,16 @@ const Feed = () => {
         >
           Copyright 2023 | fleshOwl
         </Typography>
+      </Box>
+
+      <Box
+        pl={4}
+        sx={{ overflowY: "auto", height: "calc(100vh - 78px)", flex: 2 }}
+      >
+        <Typography variant="h4" mb={4} sx={{ fontWeight: 300 }}>
+          New videos
+        </Typography>
+        <Videos videos={[]} />
       </Box>
     </Stack>
   );

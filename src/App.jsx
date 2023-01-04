@@ -1,6 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Box } from "@mui/material"
-import {Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from './components'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Box } from "@mui/material";
+import {
+  Navbar,
+  Feed,
+  VideoDetail,
+  ChannelDetail,
+  SearchFeed,
+} from "./components";
 
 const App = () => (
   <BrowserRouter>
@@ -14,6 +20,6 @@ const App = () => (
       </Routes>
     </Box>
   </BrowserRouter>
-)
+);
 
-export default App
+export default App;
