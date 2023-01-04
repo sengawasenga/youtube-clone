@@ -1,5 +1,5 @@
 export const categories = [{
-        name: 'New',
+        name: 'Trending',
         icon: 'home',
     },
     {

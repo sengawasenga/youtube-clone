@@ -4,11 +4,12 @@ import { Sidebar, Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("Trending");
+  const [videosList, setVideosList] = useState([]);
 
   useEffect(() => {
     fetchFromAPI(`search?q=${selectedCategory}`)
-      .then((data) => console.log(data.items))
+      .then((data) => setVideosList(data.items))
       .catch((err) => console.error(err));
   }, [selectedCategory]);
 
@@ -44,7 +45,7 @@ const Feed = () => {
         <Typography variant="h4" mb={4} sx={{ fontWeight: 300 }}>
           {selectedCategory} videos
         </Typography>
-        <Videos videos={[]} />
+        <Videos videosList={videosList} />
       </Box>
     </Stack>
   );
