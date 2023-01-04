@@ -1,10 +1,7 @@
 import { Stack, Icon } from "@mui/material";
 import { categories } from "../utils/contants";
-// import Icon from "@mui/material/Icon";
 
-const selectedCategory = "New";
-
-const Sidebar = () => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
     direction="row"
     sx={{
@@ -20,6 +17,7 @@ const Sidebar = () => (
           background: category.name === selectedCategory && "#6b6b6b7e",
         }}
         key={category.name}
+        onClick={() => setSelectedCategory(category.name)}
       >
         <Icon sx={{ mr: 2 }}>{category.icon}</Icon>
         <span>{category.name}</span>

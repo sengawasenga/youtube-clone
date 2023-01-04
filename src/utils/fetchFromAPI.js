@@ -1,17 +1,24 @@
 import axios from "axios";
 
-const BASE_URL = 'https://youtube-v31.p.rapidapi.com/search'
+const BASE_URL = 'https://youtube-v31.p.rapidapi.com'
 
 const options = {
     url: BASE_URL,
     params: {
-        relatedToVideoId: '7ghhRHRP6t4',
-        part: 'id,snippet',
-        type: 'video',
-        maxResults: '50'
+        part: 'snippet,id',
+        maxResults: '50',
+        order: 'date'
     },
     headers: {
-        'X-RapidAPI-Key': '73554812b9msha53a55888e723dbp10063fjsnaa54d2178eb6',
+        'X-RapidAPI-Key': import.meta.env.VITE_APP_YOUTUBE_API_KEY,
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
 };
+
+export const fetchFromAPI = async url => {
+    const {
+        data
+    } = await axios.get(`${BASE_URL}/${url}`, options)
+
+    return data
+}
