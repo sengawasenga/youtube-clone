@@ -1,83 +1,65 @@
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import HomeIcon from '@mui/icons-material/Home';
-import CodeIcon from '@mui/icons-material/Code';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import SchoolIcon from '@mui/icons-material/School';
-import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
-import CheckroomIcon from '@mui/icons-material/Checkroom';
-import GraphicEqIcon from '@mui/icons-material/GraphicEq';
-import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
-
 export const categories = [{
         name: 'New',
-        icon: < HomeIcon / > ,
-    },
-    {
-        name: 'JS Mastery',
-        icon: < CodeIcon / > ,
+        icon: 'home',
     },
     {
         name: 'Coding',
-        icon: < CodeIcon / > ,
+        icon: 'code',
     },
     {
         name: 'ReactJS',
-        icon: < CodeIcon / > ,
+        icon: 'code',
     },
     {
         name: 'NextJS',
-        icon: < CodeIcon / > ,
+        icon: 'code',
     },
     {
         name: 'Music',
-        icon: < MusicNoteIcon / >
+        icon: 'music_note'
     },
     {
         name: 'Education',
-        icon: < SchoolIcon / > ,
+        icon: 'school',
     },
     {
         name: 'Podcast',
-        icon: < GraphicEqIcon / > ,
+        icon: 'graphic_eq',
     },
     {
         name: 'Movie',
-        icon: < OndemandVideoIcon / > ,
+        icon: 'ondemand_video',
     },
     {
         name: 'Gaming',
-        icon: < SportsEsportsIcon / > ,
+        icon: 'sports_esports',
     },
     {
         name: 'Live',
-        icon: < LiveTvIcon / > ,
+        icon: 'live_tv',
     },
     {
         name: 'Sport',
-        icon: < FitnessCenterIcon / > ,
+        icon: 'fitness_center',
     },
     {
         name: 'Fashion',
-        icon: < CheckroomIcon / > ,
+        icon: 'checkroom',
     },
     {
         name: 'Beauty',
-        icon: < FaceRetouchingNaturalIcon / > ,
+        icon: 'face_retouching_natural',
     },
     {
         name: 'Comedy',
-        icon: < TheaterComedyIcon / > ,
+        icon: 'theater_comedy',
     },
     {
         name: 'Gym',
-        icon: < FitnessCenterIcon / > ,
+        icon: 'fitness_center',
     },
     {
         name: 'Crypto',
-        icon: < DeveloperModeIcon / > ,
+        icon: 'developer_mode',
     },
 ];

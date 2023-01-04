@@ -22,20 +22,20 @@ Else, just know that I love you and I appreciate your effort 😒
 
 The app consists of these main features:
 
-* Get access of the list of videos available on youtube
-* Get acces of the detail of a channel page
-* Search for a specific video
-* Play video straight into the app
-* See related videos
-* Responsive design
+- Get access of the list of videos available on youtube
+- Get acces of the detail of a channel page
+- Search for a specific video
+- Play video straight into the app
+- See related videos
+- Responsive design
 
 ### Tech stack
 
 For the tech stack of this project, we'll go wiht:
 
-* React.js: for the UI build
-* RapidAPI: for API calls
-* Material UI: for the UI kit
-* Emotion
+- React.js: for the UI build
+- RapidAPI: for API calls
+- Material UI: for the UI kit
+- Emotion: for css in js styling
 
 Hope you'll like it... 😍
