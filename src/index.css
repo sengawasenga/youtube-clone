@@ -68,6 +68,13 @@ a {
   transition: .3s ease;
 }
 
+.stat-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(114, 114, 114, 0.3);
+  color: #dfdfdf;
+}
+
 @media screen and (max-width: 900px) {
   .category-btn {
     margin: 10px;
