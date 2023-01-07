@@ -12,7 +12,7 @@ const VideoCard = ({
     <Card
       sx={{
         background: "#333",
-        width: { md: "240px", xs: "100%" },
+        width: { xs: "100%", md: "240px" },
         boxShadow: "none",
         borderRadius: "12px",
       }}
@@ -22,7 +22,7 @@ const VideoCard = ({
           image={snippet?.thumbnails?.high?.url}
           alt={snippet.title}
           sx={{
-            width: "240px",
+            width: { xs: "100%", md: "240px" },
             height: "130px",
             borderRadius: "12px",
           }}
@@ -42,7 +42,7 @@ const VideoCard = ({
             title={snippet.title}
           >
             {snippet.title.length > 45
-              ? snippet.title.slice(0, 45) + "..."
+              ? snippet.title.slice(0, 45) + " ..."
               : snippet.title}
           </Typography>
         </Link>

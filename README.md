@@ -12,7 +12,7 @@ To get started with this beautiful UI build, you just have to have Node.js and n
 
 If it's okay with Node.js and npm, you can then fork this repository, clone it into your local machine and run `npm install` on your terminal. This will install all necessary dependencies in order to get started with this project.
 
-After that you just have to go visit `http://localhost:3000` to see the UI build.
+After that you just have to go visit `http://localhost:5173` to see the UI build.
 
 If you like it, come back to this repo and give this project a star ✨
 

@@ -38,3 +38,7 @@ export {
     default as ChannelCard
 }
 from './ChannelCard'
+export {
+    default as CardSkeleton
+}
+from './CardSkeleton'

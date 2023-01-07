@@ -19,6 +19,16 @@ const ChannelDetail = () => {
       .catch((err) => console.error(err));
   }, [id]);
 
+  if (
+    !channelDetail?.snippet ||
+    !channelDetail?.statistics ||
+    !channelVideos?.length
+  ) {
+    return "Loading...";
+  }
+
+  const { snippet, statistics } = channelDetail;
+
   return (
     <Box minHeight="95vh">
       <Box
@@ -31,8 +41,8 @@ const ChannelDetail = () => {
         }}
       >
         <CardMedia
-          image={channelDetail?.snippet?.thumbnails.medium.url}
-          alt={channelDetail?.snippet?.title}
+          image={snippet?.thumbnails.medium.url}
+          alt={snippet?.title}
           sx={{
             width: "90px",
             height: "90px",
@@ -43,20 +53,17 @@ const ChannelDetail = () => {
         />
         <div>
           <Typography sx={{ fontWeight: 400, fontSize: "1.1rem" }}>
-            {channelDetail?.snippet?.title}
+            {snippet?.title}
           </Typography>
           <Typography
             sx={{ fontWeight: 300, fontSize: "0.8rem", color: "gray" }}
           >
-            {channelDetail?.snippet?.customUrl}
+            {snippet?.customUrl}
           </Typography>
           <Typography
             sx={{ fontWeight: 300, fontSize: "0.8rem", color: "gray" }}
           >
-            {parseInt(
-              channelDetail?.statistics?.subscriberCount
-            ).toLocaleString()}{" "}
-            subscribers
+            {parseInt(statistics?.subscriberCount).toLocaleString()} subscribers
           </Typography>
         </div>
       </Box>

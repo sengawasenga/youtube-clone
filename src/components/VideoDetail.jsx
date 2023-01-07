@@ -28,7 +28,7 @@ const VideoDetail = () => {
   }
 
   const {
-    snippet: { title, channelTitle, channelId },
+    snippet: { title, channelTitle, channelId, description },
     statistics: { viewCount, likeCount },
   } = video;
 
@@ -63,7 +63,7 @@ const VideoDetail = () => {
                     fontSize: "0.9rem",
                     display: "flex",
                     alignItems: "center",
-                    color: "#dfdfdf",
+                    color: "gray",
                   }}
                 >
                   {channelTitle}
@@ -95,6 +95,12 @@ const VideoDetail = () => {
                 </Typography>
               </Stack>
             </Stack>
+            <Typography
+              pt={4}
+              sx={{ color: "#dfdfdf", fontWeight: 300, fontSize: "0.9rem" }}
+            >
+              {description}
+            </Typography>
           </Box>
         </Box>
 

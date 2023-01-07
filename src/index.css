@@ -75,6 +75,14 @@ a {
   color: #dfdfdf;
 }
 
+.card-skeleton {
+  width: 240px;
+}
+
+.card-media {
+  border-radius: 12px;
+}
+
 @media screen and (max-width: 900px) {
   .category-btn {
     margin: 10px;

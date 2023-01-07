@@ -9,7 +9,9 @@ const Feed = () => {
 
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}&order=date`)
-      .then((data) => setVideosList(data.items))
+      .then((data) => {
+        setVideosList(data.items);
+      })
       .catch((err) => console.error(err));
   }, [selectedCategory]);
 
@@ -45,6 +47,7 @@ const Feed = () => {
         <Typography variant="h4" mb={4} sx={{ fontWeight: 300 }}>
           {selectedCategory} videos
         </Typography>
+
         <Videos videosList={videosList} />
       </Box>
     </Stack>
